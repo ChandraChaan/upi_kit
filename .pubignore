@@ -1,0 +1,8 @@
+.dart_tool/
+.claude/
+.github/
+build/
+coverage/
+demo/
+doc/decode.png
+pubspec.lock

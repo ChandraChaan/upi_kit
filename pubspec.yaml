@@ -1,0 +1,24 @@
+name: upi_kit
+description: >-
+  Build, parse and validate UPI payment links (upi://pay) and Bharat QR (EMV)
+  codes in pure Dart, with CRC checks and typed amounts. No dependencies.
+version: 0.1.0
+homepage: https://chandrachaan.github.io/upi_kit/
+repository: https://github.com/ChandraChaan/upi_kit
+issue_tracker: https://github.com/ChandraChaan/upi_kit/issues
+screenshots:
+  - description: Live playground creating a UPI link and Bharat QR code, and decoding scanned codes.
+    path: doc/screenshot.png
+topics:
+  - upi
+  - payments
+  - qr-code
+  - india
+  - fintech
+
+environment:
+  sdk: ^3.5.0
+
+dev_dependencies:
+  lints: ">=5.0.0 <7.0.0"
+  test: ^1.25.0
