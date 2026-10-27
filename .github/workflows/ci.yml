@@ -25,3 +25,16 @@ jobs:
         if: matrix.sdk == 'stable'
       - run: dart run example/main.dart
 
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter pub get
+        working-directory: demo
+      - run: flutter analyze
+        working-directory: demo
+      - run: flutter build web --release --base-href /upi_kit/
+        working-directory: demo
